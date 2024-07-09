@@ -10,7 +10,7 @@ test("greet renders correctly", () => {
   expect(textElement).toBeInTheDocument();
 });
 
-test("greet renders with a name passed", () => {
+test("greet renders with a name passed by string", () => {
   render(<Greet name="Joe" />);
   const textElement = screen.getByText("Hello Joe");
   expect(textElement).toBeInTheDocument();
